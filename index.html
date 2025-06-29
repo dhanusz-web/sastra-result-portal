@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result Portal - SASTRA Style</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #003366;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #0056b3;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #resultImages {
+      margin-top: 30px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      width: 90%;
+      max-width: 800px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>SASTRA Result Portal</h1>
+  <p>Enter your Registration Number:</p>
+  <input type="text" id="regInput" placeholder="e.g. 126004069" />
+  <button onclick="showResult()">View Result</button>
+  <p class="error" id="errorMsg"></p>
+
+  <div id="resultImages">
+    <img src="result1.jpg" alt="Result Page 1" />
+    <img src="result2.jpg" alt="Result Page 2" />
+  </div>
+
+  <script>
+    function showResult() {
+      const regNo = document.getElementById('regInput').value.trim();
+      const resultDiv = document.getElementById('resultImages');
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (regNo === "126004069") {
+        resultDiv.style.display = "flex";
+        errorMsg.textContent = "";
+      } else {
+        resultDiv.style.display = "none";
+        errorMsg.textContent = "Result not found for this Registration Number.";
+      }
+    }
+  </script>
+</body>
+</html>

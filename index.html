@@ -1,27 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Result Portal - SASTRA Style</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f1f1f1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       padding: 30px;
+    }
+    .container {
+      max-width: 100%;
+      height: 100%;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
     }
     h1 {
       color: #003366;
+      text-align: center;
     }
     input {
       padding: 10px;
       font-size: 16px;
-      width: 250px;
-      margin-top: 10px;
+      width: 260px;
+      margin-top: 5%;
+      margin-left: 30%;
     }
     button {
       padding: 10px 20px;
@@ -29,53 +36,1574 @@
       background: #0056b3;
       color: white;
       border: none;
-      margin-top: 10px;
       cursor: pointer;
-    }
-    #resultImages {
-      margin-top: 30px;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-    img {
-      width: 90%;
-      max-width: 800px;
-      margin-bottom: 20px;
-      border: 2px solid #ccc;
     }
     .error {
       color: red;
       margin-top: 10px;
     }
+    #resultSection {
+      display: none;
+      margin-top: 30px;
+      overflow-x: auto;
+    }
+    /* .reg{
+        margin-left:20%;
+    } */
   </style>
 </head>
+
 <body>
+
+<div class="container">
   <h1>SASTRA Result Portal</h1>
-  <p>Enter your Registration Number:</p>
+
+  <p class="reg">Enter your Registration Number:</p>
+  
   <input type="text" id="regInput" placeholder="e.g. 126000000" />
   <button onclick="showResult()">View Result</button>
   <p class="error" id="errorMsg"></p>
 
-  <div id="resultImages">
-    <img src="result1.jpg" alt="Result Page 1" />
-    <img src="result2.jpg" alt="Result Page 2" />
+  <!-- RESULT SECTION -->
+  <div id="resultSection">
+
+    <!-- YOUR ORIGINAL TABLE CODE (UNCHANGED) START -->
+    
+    <table border="1" width="100%">
+     
+        
+             <tbody><tr><td class="ui-widget-header" colspan="7">MARKS &amp; GRADES OBTAINED</td></tr>
+              <tr class="ui-widget-header">
+                <td> Sem </td>
+                <td> Mon./Year </td>
+                <td> Code </td>
+                <td> Description </td>
+                
+                <td> CIA </td>
+                
+                <td> Credit </td>
+                <td> Grade </td>
+            </tr>
+        
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CSE101</td>
+                        <td align="left"> PROBLEM SOLVING &amp; PROGRAMMING IN C</td>
+                    
+                        <td align="left"> 32</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CHY101</td>
+                        <td align="left"> ENGINEERING CHEMISTRY</td>
+                    
+                        <td align="left"> 28</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> MEC101</td>
+                        <td align="left"> BASIC MECHANICAL ENGINEERING</td>
+                    
+                        <td align="left"> 36</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CIV103</td>
+                        <td align="left"> ENGINEERING GRAPHICS</td>
+                    
+                        <td align="left"> 35</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> BIT101R01</td>
+                        <td align="left"> BIOLOGY FOR ENGINEERS</td>
+                    
+                        <td align="left"> 26</td>
+                    
+                    
+                            <td align="center"> 2</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Feb / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EIE101R01</td>
+                        <td align="left"> BASIC ELECTRONICS ENGINEERING</td>
+                    
+                        <td align="left"> 25</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>1</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAT101R01</td>
+                        <td align="left"> ENGINEERING MATHEMATICS - I</td>
+                    
+                        <td align="left"> 24</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CIV101</td>
+                        <td align="left"> BASIC CIVIL ENGINEERING</td>
+                    
+                        <td align="left"> 38</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CIV102</td>
+                        <td align="left"> ENGINEERING MECHANICS</td>
+                    
+                        <td align="left"> 30</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CSE201</td>
+                        <td align="left"> OBJECT ORIENTED PROGRAMMING IN C++</td>
+                    
+                        <td align="left"> 24</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EEE101</td>
+                        <td align="left"> BASIC ELECTRICAL ENGINEERING</td>
+                    
+                        <td align="left"> 25</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MEC102</td>
+                        <td align="left"> INTRODUCTION TO ENGINEERING DESIGN</td>
+                    
+                        <td align="left"> 38</td>
+                    
+                    
+                            <td align="center"> 2</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ENG101R01</td>
+                        <td align="left"> TECHNICAL COMMUNICATION</td>
+                    
+                        <td align="left"> 41</td>
+                    
+                    
+                            <td align="center"> 2</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Jul / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> PHY101R01</td>
+                        <td align="left"> ENGINEERING PHYSICS</td>
+                    
+                        <td align="left"> 34</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>2</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAT102R01</td>
+                        <td align="left"> ENGINEERING MATHEMATICS - II</td>
+                    
+                        <td align="left"> 26</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                
+                            <td class="ui-state-error">3</td>
+                        
+                        <td class="ui-state-error" nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td class="ui-state-error" align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EEE201</td>
+                        <td class="ui-state-error" align="left"> ELECTRIC NETWORKS</td>
+                    
+                        <td class="ui-state-error" align="left"> 14</td>
+                    
+                    
+                            <td align="center" class="ui-state-error"> 4</td>
+                        
+                    
+                        <td class="ui-state-error" style="font-weight:bold; ">F</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            Dec / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE101</td>
+                        <td align="left"> DIGITAL SYSTEM DESIGN</td>
+                    
+                        <td align="left"> 27</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EIE201</td>
+                        <td align="left"> ELECTRONIC CIRCUITS</td>
+                    
+                        <td align="left"> 24</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE102</td>
+                        <td align="left"> ENGINEERING ELECTROMAGNETICS</td>
+                    
+                        <td align="left"> 29</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            Dec / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE103</td>
+                        <td align="left"> DIGITAL SYSTEM DESIGN LABORATORY</td>
+                    
+                        <td align="left"> 45</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            Dec / 2023 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EIE202</td>
+                        <td align="left"> ELECTRONIC CIRCUITS LABORATORY</td>
+                    
+                        <td align="left"> 33</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>3</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAT201R01</td>
+                        <td align="left"> ENGINEERING MATHEMATICS - III</td>
+                    
+                        <td align="left"> 38</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EIE301</td>
+                        <td align="left"> LINEAR INTEGRATED CIRCUITS</td>
+                    
+                        <td align="left"> 32</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE104</td>
+                        <td align="left"> SIGNALS &amp; SYSTEMS</td>
+                    
+                        <td align="left"> 23</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE202</td>
+                        <td align="left"> ANALOG COMMUNICATION</td>
+                    
+                        <td align="left"> 28</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> EIE302</td>
+                        <td align="left"> SYSTEMS SIMULATION &amp; DESIGN LABORATORY</td>
+                    
+                        <td align="left"> 39</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> CSE208</td>
+                        <td align="left"> JAVA PROGRAMMING</td>
+                    
+                        <td align="left"> 36</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> MAT301R01</td>
+                        <td align="left"> ENGINEERING MATHEMATICS - IV</td>
+                    
+                        <td align="left"> 28</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE201R01</td>
+                        <td align="left"> MICROPROCESSOR &amp; MICROCONTROLLER</td>
+                    
+                        <td align="left"> 28</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>4</td>
+                    
+                        <td nowrap="">    
+                            May / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE203R01</td>
+                        <td align="left"> MICROPROCESSOR &amp; MICROCONTROLLER LABORATORY</td>
+                    
+                        <td align="left"> 42</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAT303</td>
+                        <td align="left"> PROBABILITY AND RANDOM PROCESSES</td>
+                    
+                        <td align="left"> 40</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> EIE104</td>
+                        <td align="left"> CONTROL ENGINEERING</td>
+                    
+                        <td align="left"> 24</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE301</td>
+                        <td align="left"> DIGITAL COMMUNICATION</td>
+                    
+                        <td align="left"> 38</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE204</td>
+                        <td align="left"> DIGITAL SIGNAL PROCESSING</td>
+                    
+                        <td align="left"> 31</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE302</td>
+                        <td align="left"> COMMUNICATION LABORATORY</td>
+                    
+                        <td align="left"> 46</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE205</td>
+                        <td align="left"> DIGITAL SIGNAL PROCESSING LABORATORY</td>
+                    
+                        <td align="left"> 44</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">S</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> CSE302</td>
+                        <td align="left"> COMPUTER NETWORKS</td>
+                    
+                        <td align="left"> 25</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> CSE304</td>
+                        <td align="left"> PYTHON PROGRAMMING WITH WEB FRAMEWORKS</td>
+                    
+                        <td align="left"> 38</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> OEH013</td>
+                        <td align="left"> ENHANCING CONCENTRATION</td>
+                    
+                        <td align="left"> 42</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>5</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2024 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> TNP101R01</td>
+                        <td align="left"> SOFT SKILLS - I</td>
+                    
+                        <td align="left"> 41</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE316</td>
+                        <td align="left"> DIGITAL VLSI DESIGN</td>
+                    
+                        <td align="left"> 34</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE300</td>
+                        <td align="left"> MINI PROJECT</td>
+                    
+                        <td align="left"> 47</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> ICT304</td>
+                        <td align="left"> SOFT COMPUTING TECHNIQUES</td>
+                    
+                        <td align="left"> 36</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> INT309</td>
+                        <td align="left"> DOMAIN - CENTRIC SECURITY</td>
+                    
+                        <td align="left"> 39</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE317</td>
+                        <td align="left"> FPGA LABORATORY</td>
+                    
+                        <td align="left"> 43</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A+</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE206R01</td>
+                        <td align="left"> ANTENNA &amp; WAVE PROPAGATION</td>
+                    
+                        <td align="left"> 40</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE304R01</td>
+                        <td align="left"> MICROWAVE ENGINEERING</td>
+                    
+                        <td align="left"> 30</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE305R01</td>
+                        <td align="left"> MICROWAVE LABORATORY</td>
+                    
+                        <td align="left"> 45</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>6</td>
+                    
+                        <td nowrap="">    
+                            May / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> TNP102R01</td>
+                        <td align="left"> SOFT SKILLS II</td>
+                    
+                        <td align="left"> 47</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">S</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE403</td>
+                        <td align="left"> INFORMATION THEORY &amp; CODING</td>
+                    
+                        <td align="left"> 32</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> ECE307</td>
+                        <td align="left"> OPTICAL COMMUNICATION</td>
+                    
+                        <td align="left"> 30</td>
+                    
+                    
+                            <td align="center"> 3</td>
+                    
+                    
+                        <td style="font-weight:bold; ">C</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE404</td>
+                        <td align="left"> WIRELESS COMMUNICATION</td>
+                    
+                        <td align="left"> 32</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> INT409</td>
+                        <td align="left"> EMBEDDED SECURITY</td>
+                    
+                        <td align="left"> 30</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">D</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAN105</td>
+                        <td align="left"> PROFESSIONAL ETHICS</td>
+                    
+                        <td align="left"> </td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">A</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAN101</td>
+                        <td align="left"> ENVIRONMENTAL SCIENCE</td>
+                    
+                        <td align="left"> </td>
+                    
+                    
+                            <td style="font-weight:bold;">&nbsp;</td> 
+                    
+                    
+                        <td style="font-weight:bold; ">P</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')" style="cursor: pointer;"> MAN102</td>
+                        <td align="left"> INDIAN TRADITIONAL KNOWLEDGE</td>
+                    
+                        <td align="left"> </td>
+                    
+                    
+                            <td style="font-weight:bold;">&nbsp;</td> 
+                    
+                    
+                        <td style="font-weight:bold; ">P</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> MAN103</td>
+                        <td align="left"> CONSTITUTION OF INDIA</td>
+                    
+                        <td align="left"> </td>
+                    
+                    
+                            <td style="font-weight:bold;">&nbsp;</td> 
+                    
+                    
+                        <td style="font-weight:bold; ">P</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE336</td>
+                        <td align="left"> FPGA IMPLEMENTATION OF SIGNAL PROCESSING&nbsp;SYSTEMS</td>
+                    
+                        <td align="left"> 34</td>
+                    
+                    
+                            <td align="center"> 4</td>
+                    
+                    
+                        <td style="font-weight:bold; ">B</td>
+                    
+                       
+                    </tr>
+        
+            
+                    <tr>
+                
+                    
+                                <td>7</td>
+                    
+                        <td nowrap="">    
+                            Nov / 2025 
+                    
+                        </td>
+                        <td align="left" onmouseover="style.cursor = 'pointer'" onclick="funClickCode('0')"> ECE337</td>
+                        <td align="left"> FPGA SIGNAL PROCESSING LABORATORY</td>
+                    
+                        <td align="left"> 48</td>
+                    
+                    
+                            <td align="center"> 1</td>
+                    
+                    
+                        <td style="font-weight:bold; ">S</td>
+                    
+                       
+                    </tr>
+        
+        
+        
+        
+            
+                        <tr class="ui-widget-content">
+                            <td colspan="6" align="right"><font style="font-size:15px;color:black"><b> CGPA&nbsp;&nbsp; </b></font></td>
+                            <td><font style="font-size:15px;color:black"><b>6.5576</b></font></td>
+                        </tr>
+                            
+                             
+                        
+                                      
+                        
+                        
+                        </tbody></table><table style="width: 15%" class="ui-widget-content" align="left">
+                            <tbody><tr class="ui-widget-content">
+                                <td colspan="2"><b> SGPA</b></td>
+                            </tr>
+                            <tr class="ui-widget-content">
+                                <td><b>SEM.</b></td>
+                                <td><b>SGPA</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>1</b></td>
+                                <td><b>5.9130</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>2</b></td>
+                                <td><b>5.9200</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>3</b></td>
+                                <td><b>5.8818</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>4</b></td>
+                                <td><b>5.8800</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>5</b></td>
+                                <td><b>6.4400</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>6</b></td>
+                                <td><b>7.4167</b></td>
+                            </tr>
+                                            
+                            <tr class="ui-widget-content">
+                                <td><b>7</b></td>
+                                <td><b>7.1231</b></td>
+                            </tr>
+                                                 
+                        </tbody></table>  
+                                        <table>
+                                            <tbody><tr>
+                                                <td>
+                                                    <font style="font-size:18px"><b>Revaluation / Photocopy request: </b></font><a href="https://sas.sastra.edu/examresult/indexg.php" target="_blank" style="font-size: 10pt;font-weight: bold;background-color:yellow">Click here 
+                                                </a></td>
+                                            </tr>
+                                       </tbody></table>
+                                        
+            
+                                        
+                            
+                            </div>
+<!-- PASTE START -->
+        <!-- (Your entire provided code is placed exactly here) -->
+
+       
+  
+
+          <!-- 🔽 ALL YOUR REMAINING ROWS GO HERE EXACTLY AS YOU SENT -->
+          
+        </tbody>
+    </table>
+
+    <!-- YOUR ORIGINAL TABLE CODE END -->
+
   </div>
+</div>
 
-  <script>
-    function showResult() {
-      const regNo = document.getElementById('regInput').value.trim();
-      const resultDiv = document.getElementById('resultImages');
-      const errorMsg = document.getElementById('errorMsg');
+<script>
+function showResult() {
+  const regNo = document.getElementById("regInput").value.trim();
+  const resultDiv = document.getElementById("resultSection");
+  const errorMsg = document.getElementById("errorMsg");
 
-      if (regNo === "126004069") {
-        resultDiv.style.display = "flex";
-        errorMsg.textContent = "";
-      } else {
-        resultDiv.style.display = "none";
-        errorMsg.textContent = "Result not found for this Registration Number.";
-      }
-    }
-  </script>
+  if (regNo === "126004069") {
+    resultDiv.style.display = "block";
+    errorMsg.textContent = "";
+  } else {
+    resultDiv.style.display = "none";
+    errorMsg.textContent = "Result not found for this Registration Number.";
+  }
+}
+</script>
+
 </body>
 </html>

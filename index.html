@@ -47,9 +47,55 @@
       margin-top: 30px;
       overflow-x: auto;
     }
-    /* .reg{
-        margin-left:20%;
-    } */
+    .table-wrapper{
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table{
+    min-width: 900px; /* keeps table readable */
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 10px;
+    }
+}
+.student-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.student-info p{
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.student-photo img{
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #003366;
+  border-radius: 4px;
+}
+
+/* Mobile view */
+@media (max-width: 600px){
+  .student-header{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .student-photo img{
+    margin-bottom: 10px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -59,6 +105,17 @@
   <h1>SASTRA Result Portal</h1>
 
   <p class="reg">Enter your Registration Number:</p>
+  <div class="student-header" id="studentDetails" style="display:none;">
+  <div class="student-info">
+    <p><b>Name:</b> Dhanush Ram</p>
+    <p><b>DOB:</b> 27 / 09 / 2004</p>
+  </div>
+
+  <div class="student-photo">
+    <img src="me.jpg" alt="Student Photo">
+  </div>
+</div>
+
   
   <input type="text" id="regInput" placeholder="e.g. 126000000" />
   <button onclick="showResult()">View Result</button>
@@ -66,7 +123,7 @@
 
   <!-- RESULT SECTION -->
   <div id="resultSection">
-
+    <div class="table-wrapper">
     <!-- YOUR ORIGINAL TABLE CODE (UNCHANGED) START -->
     
     <table border="1" width="100%">
@@ -1569,7 +1626,8 @@
                                             </tr>
                                        </tbody></table>
                                         
-            
+  </div>
+
                                         
                             
                             </div>
@@ -1586,23 +1644,29 @@
 
     <!-- YOUR ORIGINAL TABLE CODE END -->
 
-  </div>
+   </div>
 </div>
 
 <script>
+
 function showResult() {
   const regNo = document.getElementById("regInput").value.trim();
   const resultDiv = document.getElementById("resultSection");
   const errorMsg = document.getElementById("errorMsg");
+  const studentDetails = document.getElementById("studentDetails");
 
   if (regNo === "126004069") {
     resultDiv.style.display = "block";
+    studentDetails.style.display = "flex";
     errorMsg.textContent = "";
   } else {
     resultDiv.style.display = "none";
+    studentDetails.style.display = "none";
     errorMsg.textContent = "Result not found for this Registration Number.";
   }
 }
+</script>
+
 </script>
 
 </body>
